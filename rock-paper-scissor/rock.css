@@ -1,0 +1,107 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #1e1e2e;
+    color: #fff;
+    margin: 0;
+}
+
+/* Title Styling */
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+/* Choice Buttons */
+.choice {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.choice button {
+    font-size: 1.5rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ff9800;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.choice button:hover {
+    background-color: #e68a00;
+    transform: scale(1.1);
+}
+
+/* Displays (Player, Computer, Result) */
+#playerdisplay, #computerdisplay {
+    font-size: 2rem;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #282a36;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+}
+
+#resultdisplay {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/* Score Display */
+.scoredisplay {
+    font-size: 2rem;
+    margin: 10px 0;
+    background: #222;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+/* Winning & Losing Text Colors */
+.greentext {
+    color: #4caf50;
+}
+
+.redtext {
+    color: #f44336;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .choice {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .choice button {
+        width: 100%;
+    }
+
+    #playerdisplay, #computerdisplay, .scoredisplay {
+        font-size: 1.5rem;
+        width: 90%;
+    }
+
+    #resultdisplay {
+        font-size: 2.5rem;
+    }
+}
